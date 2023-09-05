@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Menu {% endblock %}
+{% block content %}
+<div class="row">
+    {% for dish in menu %}
+        <div class="card mb-4 text-dark bg-light border-secondary">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{ dish.image_url }}" class="img-fluid rounded-start" style="height: 100%;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ dish.name }}</h5>
+                        <p class="card-text">{{ dish.ingredients }}</p>
+                        <div class="flex w-full justify-end">
+                            <h5 class="float-right">{{ dish.price|floatformat:2 }} zł</h5>
+                            <p class="card-text">
+                                <button data-dish="{{ dish.id }}" data-action="add" class="btn btn-outline-success add-btn update-cart">Order</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

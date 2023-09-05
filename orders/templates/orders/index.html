@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Main page {% endblock %}
+{% block content %} 
+
+<div class="row justify-content-center">
+    <div class="col-6">
+        <p>Basic app to order food. </p>
+        Functionalities:
+        <ol>
+            <li>Create account</li>
+            <li>Log In</li>
+            <li>Log Out</li>
+            <li>Show menu</li>
+            <li>Add products to cart</li>
+            <li>View cart with edit option (add, remove, delete products)</li>
+            <li>Show summary</li>
+            <li>Confirm and pay with PayPal integration (Blik, PayPal account, Card, Przelewy24) - Sandbox mode</li>
+        </ol>
+    </div>
+</div>
+
+{% endblock %}
