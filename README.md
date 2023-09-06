@@ -21,14 +21,36 @@ The project consists of two main Django apps:
 
 ## Project Functions with visualization
 
-1. Create account
+1. Create an account
+   
+<img src="https://github.com/Majkel97/Food_Order_System/blob/main/img_for_readme/1_create_account.png?raw=true"  width="800px" height="auto">
+
 2. Log In
+
+<img src="https://github.com/Majkel97/Food_Order_System/blob/main/img_for_readme/2_log_in.png?raw=true"  width="800px" height="auto">
+
 3. Log Out
+
 4. Show menu
-5. Add products to cart
+<img src="https://github.com/Majkel97/Food_Order_System/blob/main/img_for_readme/3_show_menu.png?raw=true"  width="800px" height="auto">
+
+5. Add products to the cart
+
 6. View cart with edit option (add, remove, delete products)
+   
+<img src="https://github.com/Majkel97/Food_Order_System/blob/main/img_for_readme/4_cart.png?raw=true"  width="800px" height="auto">
+
 7. Show summary
+    
+<img src="https://github.com/Majkel97/Food_Order_System/blob/main/img_for_readme/5_summary.png?raw=true"  width="800px" height="auto">
+
 8. Confirm and pay with PayPal integration (Blik, PayPal, Card, Przelewy24) - Sandbox mode
+    
+<img src="https://github.com/Majkel97/Food_Order_System/blob/main/img_for_readme/6_pay_pal.png?raw=true"  width="800px" height="auto">
+<img src="https://github.com/Majkel97/Food_Order_System/blob/main/img_for_readme/7_payment_process.png?raw=true"  width="800px" height="auto">
+<img src="https://github.com/Majkel97/Food_Order_System/blob/main/img_for_readme/8_confrimation_client.png?raw=true"  width="800px" height="auto">
+<img src="https://github.com/Majkel97/Food_Order_System/blob/main/img_for_readme/9_confirmation_store.png?raw=true"  width="800px" height="auto">
+<img src="https://github.com/Majkel97/Food_Order_System/blob/main/img_for_readme/10_transaction_details.png?raw=true"  width="800px" height="auto">
 
 ## Instalation
 
@@ -38,9 +60,9 @@ The project consists of two main Django apps:
    It has to contain the following data:
 
    ```
-    # Replace variable values with your secrets / key / logins
+   # Replace variable values with your secrets / key / logins
 
-    # Django settings
+   # Django settings
    DEBUG='TRUE_OR_FALSE'
    SECRET_KEY='YOUR_SECRET_KEY'
 
@@ -51,14 +73,14 @@ The project consists of two main Django apps:
    POSTGRES_HOST=db
    POSTGRES_PORT=5432
 
-    # PayPal settings
+   # PayPal settings
    PAYPAL_CLIENT_ID = 'YOUR_PAYPAL_CLIENT_ID'
    PAYPAL_CURRENCY = 'CURRENCY'
    ```
 
 3. Make sure you have docker installed and running
 
-4. Run following commands from app directory
+4. Run the following commands from the app directory
 
    ```
    cd .docker
@@ -67,14 +89,14 @@ The project consists of two main Django apps:
 
 ## Usage
 
-1. Run following commands from app directory
+1. Run the following commands from the app directory
 
    ```
    cd .docker
    docker compose build
    ```
 
-2. Docker will install all requirments, create and apply migrations and then start server using the following commands from Dockerfile and docker-compose.yaml
+2. Docker will install all requirements, create and apply migrations, and then start the server using the following commands from Dockerfile and docker-compose.yaml
 
    ```
    bash -c "python manage.py makemigrations
